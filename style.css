@@ -1,103 +1,134 @@
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(162, 223, 228, 0.37);
+    margin: 10px;   
+}
+
+h1, h2, .container, .container a, .language, footer{
+    color: rgb(69, 67, 80);
+}
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: 0px;
+    font-family: pacifico;
+    /* color: white; */
+}
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to right, #e0f7fa, #fff3e0);
-  color: #333;
+    background-image: url(IMG/background1.jpg);
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.intro {
+    margin: 10px;
+    /* color: white; */
+    
+}
+
+.premium {
+   margin: 10px;
+   /* color: white; */
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+
 }
 
-header {
-  background-color: #00838f;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-  border-bottom: 5px solid #004d40;
+.responsive {
+    /* responsive container */
+    width: 1200px;
+    margin: auto;
+    max-width: 100%;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.pictures {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*border: 5px solid red;*/
+    gap: 50px;
 }
 
-nav ul li {
-  margin: 0 15px;
+.language {
+    flex: 1 1 30%;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: .25s;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
+.language img {
+    display: block;
+    width: 100%;
+    /* height: 150px; */
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-bottom: 15px;
+    /* max-width: 150px; */
+    /* height: auto; */
+    /* margin: 0 auto; */
+    /*display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 100px;
+    border: 2px solid rgba(73, 67, 67, 0.329);*/
+    border-radius: 75px;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-  color: #ffd600;
+.language:hover {
+    transform: scale(1.05);
 }
 
-.intro {
-  text-align: center;
-  margin: 40px 0 20px;
+.language a {
+    display: block;
+    margin-top: 5px;
 }
 
-.teachers-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  padding-bottom: 40px;
-}
-
-.teacher-card {
-  background-color: #ffffffcc;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.teacher-card:hover {
-  transform: translateY(-5px);
-}
-
-.teacher-card img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #00838f;
-  margin-bottom: 15px;
-}
-
-.teacher-card h3 {
-  margin-bottom: 10px;
-  color: #006064;
+.iran-flag {
+    object-position: left 0%;
 }
 
 footer {
-  background-color: #004d40;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 0.9rem;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(22, 193, 209, 0.247);
+    margin: 30px; 
+    font-size: 20px;
+    color: white;
 }
 
-footer a {
-  color: #ffd600;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
+/*footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+  }
+    */
+  
+  footer a {
+    color: #ffd600;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
