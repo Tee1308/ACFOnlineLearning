@@ -1,0 +1,70 @@
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(162, 223, 228, 0.37);
+    margin: 10px;   
+}
+
+h1, h2, h3, .container, .container a, .language, footer{
+    color: rgb(69, 67, 80);
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+body {
+    background-image: url(IMG/background1.jpg);
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.email {
+    text-align: center;
+}
+  
+.intro {
+    text-align: center;
+    margin: 10px;
+}
+  
+.premium {
+   margin: 10px;
+}
+  
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.responsive {
+    /* responsive container */
+    width: 1200px;
+    margin: auto;
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(22, 193, 209, 0.247);
+    margin: 30px; 
+    font-size: 20px;
+    color: white;
+}
+
+footer a {
+    color: #ffd600;
+    text-decoration: none;
+}
+  
+  footer a:hover {
+    text-decoration: underline;
+}
